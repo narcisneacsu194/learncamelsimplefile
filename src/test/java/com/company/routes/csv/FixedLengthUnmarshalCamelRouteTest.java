@@ -37,5 +37,8 @@ public class FixedLengthUnmarshalCamelRouteTest extends CamelTestSupport{
 
         assertEquals(expectedDate1.getYear(), employees.get(0).getLocalDate().getYear());
         assertEquals(expectedDate2.getYear(), employees.get(1).getLocalDate().getYear());
+
+        assertEquals(30, employees.get(0).getAge());
+        assertEquals(33, employees.get(1).getAge());
     }
 }
