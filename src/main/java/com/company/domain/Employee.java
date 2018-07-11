@@ -1,9 +1,16 @@
 package com.company.domain;
 
+import org.apache.camel.dataformat.bindy.annotation.CsvRecord;
+import org.apache.camel.dataformat.bindy.annotation.DataField;
+
+@CsvRecord(separator = ",", skipFirstLine = true)
 public class Employee {
+    @DataField(pos = 1)
     private String id;
-    private String name;
-    private String joinDate;
+    @DataField(pos = 2)
+    private String firstName;
+    @DataField(pos = 3)
+    private String lastName;
 
     public String getId() {
         return id;
@@ -13,28 +20,28 @@ public class Employee {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
-    public String getJoinDate() {
-        return joinDate;
+    public String getLastName() {
+        return lastName;
     }
 
-    public void setJoinDate(String joinDate) {
-        this.joinDate = joinDate;
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     @Override
     public String toString() {
         return "Employee{" +
                 "id='" + id + '\'' +
-                ", name='" + name + '\'' +
-                ", joinDate='" + joinDate + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
                 '}';
     }
 }
