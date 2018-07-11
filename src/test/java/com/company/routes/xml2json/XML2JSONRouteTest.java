@@ -1,6 +1,5 @@
-package com.company.routes.xmlxstream;
+package com.company.routes.xml2json;
 
-import com.company.routes.xml2json.XML2JSONRoute;
 import org.apache.camel.RoutesBuilder;
 import org.apache.camel.test.junit4.CamelTestSupport;
 import org.junit.Test;
