@@ -6,6 +6,7 @@ import org.apache.camel.RoutesBuilder;
 import org.apache.camel.test.junit4.CamelTestSupport;
 import org.junit.Test;
 
+import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
 
@@ -40,5 +41,11 @@ public class FixedLengthUnmarshalCamelRouteTest extends CamelTestSupport{
 
         assertEquals(30, employees.get(0).getAge());
         assertEquals(33, employees.get(1).getAge());
+
+        BigDecimal expectedSalary1 = new BigDecimal("80000.00");
+        BigDecimal expectedSalary2 = new BigDecimal("90000.00");
+
+        assertEquals(expectedSalary1, employees.get(0).getSalary());
+        assertEquals(expectedSalary2, employees.get(1).getSalary());
     }
 }
