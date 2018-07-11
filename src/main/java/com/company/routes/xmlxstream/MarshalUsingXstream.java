@@ -21,7 +21,7 @@ public class MarshalUsingXstream extends RouteBuilder{
     private XStreamDataFormat populateStreamDef(){
         XStreamDataFormat xStreamDataFormat = new XStreamDataFormat();
         Map<String, String> aliases = new HashMap<>();
-        aliases.put("employee", Employee.class.getCanonicalName());
+        aliases.put("employee", Employee.class.getName());
         xStreamDataFormat.setAliases(aliases);
         return xStreamDataFormat;
     }
