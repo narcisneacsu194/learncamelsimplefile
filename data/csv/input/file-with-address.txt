@@ -1,2 +1,0 @@
-id,firstname,lastname,addressline,city,state,zip,country
-1,Narcis,Neacsu,1234 abc street,apple valley,minnesota,12345,USA

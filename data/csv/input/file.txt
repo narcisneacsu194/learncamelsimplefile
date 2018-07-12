@@ -1,3 +1,0 @@
-id,firstName,lastName
-1,Narcis,Neacsu
-2,Ionut,Neaccssu
