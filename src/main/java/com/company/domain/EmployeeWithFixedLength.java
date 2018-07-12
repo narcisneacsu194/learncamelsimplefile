@@ -21,7 +21,7 @@ public class EmployeeWithFixedLength {
     @DataField(pos = 5, delimiter = "^")
     private int age;
 
-    @DataField(pos = 6, length = 5, precision = 2)
+    @DataField(pos = 6, length = 8, precision = 2)
     private BigDecimal salary;
 
     public int getId() {
